@@ -1,28 +1,44 @@
 import checkResult from '../checkResult.js';
 import getRandomThrow from '../get-random-throw.js';
 
-const throwRock = document.getElementById('rock');
-const throwPaper = document.getElementById('paper');
-const throwScissors = document.getElementById('scissors');
-
 const button = document.getElementById('button');
 
 const numberOfWins = document.getElementById('wins');
 const numberOfLosses = document.getElementById('losses');
 const numberOfDraws = document.getElementById ('draws');
-const results = document.getElementById('result');
 
-let numberOfWins = 0;
-let numberOfLosses = 0;
-let numberOfDraws = 0;
+const displayResults = document.getElementById('result');
 
-button.addEventListener ('click'), () => {
+let wins = 0;
+let losses = 0;
+let draws = 0;
+
+button.addEventListener ('click', () => {
+
+    const playerChecked = document.querySelector('input:checked');
+    const playerThrow = playerChecked.value;
+    const computerThrow = getRandomThrow();
+    const results = checkResult(playerThrow, computerThrow); 
+    
+    if (results === 'draw') {
+        draws ++;
+        numberOfDraws.textContent = draws;
+        displayResults.textContent = 'Draw!';
+    }
 
 
-}
+    else if (results === 'win') {
+        wins ++;
+        numberOfWins.textContent = wins;
+        displayResults.textContent = 'You Win!';
+    }
+    
+    else if (results === 'lose') {
+        losses ++;
+        numberOfLosses.textContent = losses;
+        displayResults.textContent = 'You Lose!';   
+    }}); 
     
 
 
 
-
-// You can alternatively use document.querySelector('input:checked') in your event handler to get the actively checked radio button each time the play button is clicked. (input.value)
