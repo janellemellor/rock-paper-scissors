@@ -1,11 +1,12 @@
 import getRandomThrow from './get-random-throw';
 
-const computer = getRandomThrow ();
 
 const checkResult = (player, computer) => {
-    if (player === computer) return ('draw');
-    if (player < computer) return ('lose');
-    if (player > computer) return ('win');
+
+    if (player === getRandomThrow) return 'draw';
+    else if (player === 'Rock' & (getRandomThrow === 'Paper' || 'Scissors')) return 'win';
+    else if (player === 'Paper' & (getRandomThrow === 'Rock' || 'Scissors')) return 'lose';
+        
 };
 
 export default checkResult;
