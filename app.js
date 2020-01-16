@@ -19,9 +19,6 @@ button.addEventListener ('click', () => {
     const playerThrow = playerChecked.value;
     const computerThrow = getRandomThrow();
     const results = checkResult(playerThrow, computerThrow); 
-   
-    console.log(playerThrow);
-    console.log(computerThrow);
   
     if (results === 'draw') {
         draws ++;

@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+    background-color: #015370;
+}
+
+header,
+h2 {
+    color: white;
+}
+
+ul {
+    text-align: center;
+    list-style: inside;
+    color: #029ED6;    
+  }
+
+label {
+    color: #0AFFE7;
+    font-size: 20px;
+}
+
+#result {
+    font-size: 40px;
+    text-align: center;
+}
+
+p {
+   color: #029ED6;
+   font-size: 20px;
+}
+
+button {
+    background-color: #0AFFE7;
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+

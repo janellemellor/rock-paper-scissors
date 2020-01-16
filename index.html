@@ -7,13 +7,22 @@
 
 
 <body>
-    <header><h1><strong>Rock Paper Scissors</strong></h1></header>
+    <header><h1><strong>Let's Play Rock Paper Scissors!</strong></h1>
+        <img src = 'https://miro.medium.com/max/2800/1*JOvf8IhmSCqaT7guHfw3BQ.jpeg' height = 150px, width = 350px>
+    </header>
 
     <h2>Instructions</h2>
-    <p>Rules go here (paper beats rock, rock beats scissors, scissors beats paper)</p>
-    <!-- consider using a list here for the rules -->
+    <div>   
+      <ul>
+        <li>Rock beats Scissors</li>
+        <li>Scissors beats Paper</li>
+        <li>Paper beats Rock</li>
+      </ul>
+    </div>
+      
+  
 
-    <label id = "rock">
+    <label id = "rock" >
         Rock
       <input type= "radio" name = "throw" value = "rock">
     </label>
@@ -33,24 +42,23 @@
     </div>
 
     <div>
-        <p>Number of Wins<span id = "wins"></span></p>
+        <p>Number of Wins  <span id = "wins"></span></p>
     </div>
 
     <div>
-        <p>Number of Losses<span id = "losses"></span></p>
+        <p>Number of Losses  <span id = "losses"></span></p>
     </div>
 
     <div>
-        <p>Number of Draws<span id = "draws"></span></p>
+        <p>Number of Draws  <span id = "draws"></span></p>
     </div>
 
     <div>
-       <p>Display computer's throw and the result here (win/loss/draw)<span id = "result"></span></p> 
+       <p><span id = "result"></span></p> 
     </div>
 
     <script type="module" src="app.js"></script>
-
-    <footer></footer>
+    
 </body>
 
 </html>
