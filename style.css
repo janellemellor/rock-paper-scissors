@@ -7,12 +7,15 @@ header,
 h2 {
     color: white;
 }
+.list {
+    margin: 0 auto;
+}
 
 ul {
-    text-align: center;
     list-style: inside;
-    color: #029ED6;    
-  }
+    color: #029ED6; 
+    text-align: center;   
+}
 
 label {
     color: #0AFFE7;
